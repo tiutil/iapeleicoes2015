@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /iapeleicoes2015
+RewriteCond $1 !^(index\.php|css|js|fonts|file|img|assets)
+RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
